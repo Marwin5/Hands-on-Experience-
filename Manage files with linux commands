@@ -1,0 +1,52 @@
+Task 1: Creating a new directory.
+
+create a new subdirectory called logs in the /home/analyst directory. 
+>> analyst@24a4255a0af7:~$ mkdir logs 
+
+List the contents of the /home/analyst directory to confirm that the logs subdirectory was created. 
+>> analyst@24a4255a0af7:~$ ls
+Output: logs notes reports temp 
+
+Task 2: Removing a directory.
+
+Remove the temp directory 
+>> nalyst@24a4255a0af7:~$ rmdir temp 
+
+List the contents of the /home/analyst directory to confirm that the temp subdirctory was removed 
+>> nalyst@24a4255a0af7:~$ ls
+Output: logs notes reports 
+
+Task 3: Moving a file.
+
+Navigate tp the /home analyst/notes directory. 
+>> analyst@24a4255a0af7:~$ cd /home/analyst/notes
+
+Move the Q3patches.txt file from /home/analyst/notes to /home/analyst/reports.
+>> analyst@24a4255a0af7:~/notes$ mv Q3patches.txt /home/analyst/reports 
+
+Change current directory to reports subdirectory and list content to confirm Q3patches.txt was moved.
+>> analyst@24a4255a0af7:~/notes$ cd /home/analyst/reports 
+>> analyst@24a4255a0af7:~/reports$ ls
+Output: Q1patches.txt  Q2patches.txt  Q3patches.txt
+
+Task 4: Removing a file.
+
+Change directory from reports to notes.
+>> analyst@24a4255a0af7:~/reports$ cd /home/analyst/notes
+
+Remove the tempnotes.txt fromt file from the /home/analyst/notes directory 
+>> analyst@24a4255a0af7:~/notes$ rm tempnotes.txt 
+
+Task 5: Creating a new file. 
+
+Using touch to create an empty file called task.txt
+>> analyst@24a4255a0af7:~/notes$ touch tasks.txt
+
+List the contents of /home/analyst/notes directory. 
+>> analyst@24a4255a0af7:~/notes$ ls 
+tasks.txt
+
+Task 6: Edit a file 
+
+Using nano text editor open the tasks.txt file 
+>>analyst@24a4255a0af7:~/notes$ nano tasks.txt
