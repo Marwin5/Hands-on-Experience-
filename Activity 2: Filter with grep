@@ -1,1 +1,6 @@
+Task 1: Search for error messages in a log file 
 
+Navigate to the logs directory. 
+>> analyst@f8ed80368369:~$ cd /home/analyst/logs
+
+Use grep to filter the server_logs.txt file, and return all lines containing the text string error.
