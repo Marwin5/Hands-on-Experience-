@@ -6,16 +6,16 @@ Display working directory.
 
 Display the names of the files and directories in the current working directory. 
 >> analyst@63fcced8e3bc:-$ ls
-    logs projects reposrts temp
+Output: logs projects reposrts temp
 
 Task 2: Change the directory and list the subdirectories 
   
-Navigate to the /home/analyst/reports directory.
+Navigate to the reports directory.
 >> analyst@63fcced8e3bc:-$ cd reports 
 
 Display the files and subdirectories in the /home/analyst/reports directory.
 >> analyst@be72d18b933d:~/reports$ ls
-    users 
+Output: users 
 
 Task 3: Locate and read contents of a file
 
@@ -24,7 +24,7 @@ Navigate to the users directory.
 
 List the files in the current directory.
 >> analyst@64e5e20fa7ab:~/reports/users$ ls
-   Q1_added_users.txt  Q1_deleted_users.txt
+Output: Q1_added_users.txt  Q1_deleted_users.txt
 
 Display the contents of the Q1_added_usres.txt.
 >> analyst@64e5e20fa7ab:~/reports/users$ cat Q1_added_users.txt
@@ -36,7 +36,7 @@ Navigate to the logs directory.
 
 Display the name of the file contents.
 >> analyst@64e5e20fa7ab:~/logs$ ls
-    server_logs.txt
+Output: server_logs.txt
 
 Display the first 10 lines of this file.
 >> head server_logs.txt
