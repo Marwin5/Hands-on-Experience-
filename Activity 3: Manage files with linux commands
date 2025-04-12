@@ -49,4 +49,5 @@ tasks.txt
 Task 6: Edit a file 
 
 Using nano text editor open the tasks.txt file 
+
 >>analyst@24a4255a0af7:~/notes$ nano tasks.txt
