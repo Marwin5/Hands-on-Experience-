@@ -1,7 +1,11 @@
 Task 1: Checking files and directory details.
 
 Navigate to projects directory.
->> 
+>> researcher2@e682b5cffb97:~$ cd projects 
 
 Listing the contents and permissions of the projects directory. 
->> 
+>> researcher2@e682b5cffb97:~/projects$ ls 
+Output: 
+drafts         project_r.txt
+project_k.txt  project_t.txt
+project_m.txt
