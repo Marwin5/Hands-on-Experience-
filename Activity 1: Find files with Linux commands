@@ -1,42 +1,42 @@
-Task 1: Get current directory information
+Task 1: Getting current directory information.
 
 Display working directory.
 >> analyst@63fcced8e3bc:-$ pwd
     /home/analyst
 
-Display the names of the files and directories in the current working directory. 
+Displaying the names of the files and directories in the current working directory. 
 >> analyst@63fcced8e3bc:-$ ls
 Output: logs projects reposrts temp
 
-Task 2: Change the directory and list the subdirectories 
+Task 2: Changing the directory and list the subdirectories. 
   
-Navigate to the reports directory.
+Navigating to the reports directory.
 >> analyst@63fcced8e3bc:-$ cd reports 
 
-Display the files and subdirectories in the /home/analyst/reports directory.
+Displaying the files and subdirectories in the /home/analyst/reports directory.
 >> analyst@be72d18b933d:~/reports$ ls
 Output: users 
 
-Task 3: Locate and read contents of a file
+Task 3: Locating and reading contents of a file.
 
-Navigate to the users directory.
+Navigating to the users directory.
 >> analyst@64e5e20fa7ab:~/reports$ cd users
 
-List the files in the current directory.
+Listing the files in the current directory.
 >> analyst@64e5e20fa7ab:~/reports/users$ ls
 Output: Q1_added_users.txt  Q1_deleted_users.txt
 
-Display the contents of the Q1_added_usres.txt.
+Displaying the contents of the Q1_added_usres.txt.
 >> analyst@64e5e20fa7ab:~/reports/users$ cat Q1_added_users.txt
 
-Task 4: Navigate to a directory and locate a file
+Task 4: Navigating to a directory and locating a file
 
-Navigate to the logs directory.
+Navigating to the logs directory.
 >> analyst@64e5e20fa7ab:~/reports/users$ cd /home/analyst/logs 
 
-Display the name of the file contents.
+Displaying the name of the file contents.
 >> analyst@64e5e20fa7ab:~/logs$ ls
 Output: server_logs.txt
 
-Display the first 10 lines of this file.
+Displaying the first 10 lines of this file.
 >> head server_logs.txt
