@@ -20,9 +20,38 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 19 01:39 drafts
 Which file grants other users write permission 
 >> researcher2@f65a9a5ed789:~/projects$ -rw-rw-rw- 1 researcher2 research_team   46 Apr 19 01:39 project_k.txt
 
-Task 2: Change file permissions. 
+Task 2: Changing file permissions for project_k.txt and taking away write permissions from other.  
 >> researcher2@f65a9a5ed789:~/projects$ chmod 0-w project_k.txt 
 
+Listing contents and permissions of the project_m.txt file.
+>> researcher2@f9f3a515df7f:~/projects$ ls -la project_m.txt
+
+Changing permissions of the project_m.txt file so the group doesnt have read or write permissions. 
+>> researcher2@f9f3a515df7f:~/projects$ chmod g-r,g-w project_m.txt
+
+Task 3: Changing file permissions on a hidden file called .project_x.txt 
+
+Checking the permissions of the hidden file. 
+>> researcher2@f9f3a515df7f:~/projects$ ls -la .project_x.txt
+
+Output:  -rw--w---- 1 researcher2 research_team 46 Apr 22 21:41 .project_x.txt
+
+Changing the permissions of the .project_x.txt file so that both user and the group can read but not write.
+>> researcher2@f9f3a515df7f:~/projects$ chmod u-w,g-w,g+r .project_x.txt
+
+Task 4: Checking the permissions of the drafts directory.
+>>  researcher2@f9f3a515df7f:~/projects$ ls -la /home/researcher2/projects/drafts 
+
+Output:
+drwx--x--- 2 researcher2 research_team 4096 Apr 22 21:41 .
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 22 21:41 ..
+
+Removing the execute permission for the group.
+>>  researcher2@f9f3a515df7f:~/drafts$ chmod g-x drafts 
+
+Output:
+drwx------ 2 researcher2 research_team 4096 Apr 22 21:41 .
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 22 21:41 .
 
 
 
