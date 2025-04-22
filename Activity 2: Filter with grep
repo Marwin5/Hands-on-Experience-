@@ -1,14 +1,14 @@
 Task 1: Searching for error messages in a log file 
 
-Navigate to the logs directory. 
+Navigating to the logs directory. 
 >> analyst@f8ed80368369:~$ cd /home/analyst/logs
 
-Use grep to filter the server_logs.txt file, and return all lines containing the text string error.
+Using grep to filter the server_logs.txt file, and returning all lines containing the text string error.
 >> analyst@f8ed80368369:~/logs$ grep erorr server_logs.txt 
 
 Task 2: Finding files containing specific strings.
 
-Navigate to the users directory.
+Navigating to the users directory.
 >> analyst@f8ed80368369:~/logs$ cd /home/analyst/reports/users
 >> analyst@f8ed80368369:~/reports/users$ 
 
@@ -16,13 +16,13 @@ Using the pipe character to output the ls command to the grep command to list on
 >> analyst@f8ed80368369:~/reports/users$ ls|grep Q1
 Output: Q1_access.txt Q1_added_users.txt Q1_deleted_users.txt
 
-List the files that contain the word access in the names using grep. 
+Listing the files that contain the word access in the names using grep. 
 >> analyst@f8ed80368369:~/reports/users$ ls|grep access
 Output: Q1_access.txt Q2_access.txt Q3_access.txt Q4_access.txt
 
 Task 3: Searcing more file contents. 
 
-Display the files in the users directory.
+Displaying the files in the users directory.
 >> analyst@f8ed80368369:~/reports/users$ ls 
 Output: 
 Q1_access.txt         Q3_access.txt
@@ -32,13 +32,13 @@ Q2_access.txt         Q4_access.txt
 Q2_added_users.txt    Q4_added_users.txt
 Q2_deleted_users.txt  Q4_deleted_users.txt
 
-Search the Q2_deleted_users.txt file for the username jhill.
+Searching the Q2_deleted_users.txt file for the username jhill.
 >> analyst@f8ed80368369:~/reports/users$ grep jhill Q2_deleted_users.txt
 Output: 
 employee_id  username  department
 1025         jhill     Sales
 
-Search the Q4_added_users.txt file and list the users who were added to the Human Resources department. 
+Searching the Q4_added_users.txt file and list the users who were added to the Human Resources department. 
 >> analyst@f8ed80368369:~/reports/users$ grep Human Resources Q4_added_users.txt
 Output: 
 employee_id  username  department
