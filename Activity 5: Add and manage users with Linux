@@ -1,4 +1,10 @@
 Task 1: Adding a new user.
 
+Writing a command that adds researcher9 as a new user to the system. 
+analyst@f4567fd3ee75:~$ sudo useradd researcher9 
+
+Adding researcher9 to a primary group in the system called research_team. 
+analyst@f4567fd3ee75:~$ sudo useermod researcher9 -g reseacrh_team
+
 
 
