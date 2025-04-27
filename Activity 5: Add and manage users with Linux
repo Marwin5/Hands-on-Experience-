@@ -1,10 +1,28 @@
 Task 1: Adding a new user.
 
 Writing a command that adds researcher9 as a new user to the system. 
-analyst@f4567fd3ee75:~$ sudo useradd researcher9 
+>> analyst@f4567fd3ee75:~$ sudo useradd researcher9 
 
 Adding researcher9 to a primary group in the system called research_team. 
-analyst@f4567fd3ee75:~$ sudo useermod researcher9 -g reseacrh_team
+>> analyst@f4567fd3ee75:~$ sudo useermod researcher9 -g reseacrh_team
+
+Task 2: Assigning file ownership. 
+
+Using the chown command to make researcher9 the owner of the project_r.txt file.
+>> analyst@f4567fd3ee75:~$ sudo chown researcher9 /home/researcher2/projects/projects_r.txt
+
+Task 3: Adding researcher9 to a secondary group. 
+
+Adding researcher9 to the sales_team.  
+>> analyst@f4567fd3ee75:~$ sudo usermod researcher9 -a -G sales_team
+
+Task 4: Deleting a user.
+
+Deleting the researcher9 user. 
+>> analyst@f4567fd3ee75:~$ sudo userdel researcher9 
+
+Deleting the group researcher9.
+>> analyst@f4567fd3ee75:~$ sudo groupdel researcher9
 
 
 
