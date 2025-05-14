@@ -4,7 +4,7 @@ Navigating to the logs directory.
 >> analyst@f8ed80368369:~$ cd /home/analyst/logs
 
 Using grep to filter the server_logs.txt file, and returning all lines containing the text string error.
->> analyst@f8ed80368369:~/logs$ grep erorr server_logs.txt 
+>> analyst@f8ed80368369:~/logs$ grep error server_logs.txt 
 
 Task 2: Finding files containing specific strings.
 
